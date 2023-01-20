@@ -1,0 +1,477 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+
+}
+
+
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: cursive;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+
+
+   /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:rgb(251, 220, 224);
+    color: rgb(0, 0, 0);
+   }
+   .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+    margin-left: 40px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    margin-right: 30px;
+    
+   }
+   .menu li:hover {
+    background-color: #bb4caa;
+    border-radius: 5px;
+    transition: 0.3s ease;
+
+   }
+   .menu li a:hover{
+    color: white;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:rgb(202, 150, 120);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 20px;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#845f1c;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   }
+
+
+.heading1 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+}
+
+.advanture-idea {
+    height: 150px;
+    background-color:;
+  
+
+}
+
+.advanture-idea h1 {
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+.idea {
+    height: auto;
+     
+}
+.idea .card{
+    margin-top: 0px;
+    height: 520px;
+    width:300px ;
+    margin: auto;
+    border: none;
+}
+
+.idea .card-title11{
+    font-size: 25px;
+    text-align: center;
+}
+.card-img-top {
+    height: 200px;
+    width: 250px;
+    margin-top: 10px;
+    background-color:;
+border-radius: 10px;
+    
+}
+
+.btn-ai{
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: solid  2px;
+    width: 45%;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+    background-color:rgb(45, 103, 237);
+}
+.btn-ai:hover{
+    background-color:white ;
+    color: black;
+    transition: 1s;
+}
+.space {
+    height: 100px;
+
+}
+
+.space h1 {
+    text-align: center;
+    margin-top: 2%;
+}
+
+/* ---------------shop------------ */
+
+.shop {
+    height: auto;
+    /* background-color: ; */
+
+}
+
+.shop .card-1 {
+    height: 300px;
+    width: 300px;
+    margin:auto ;
+     margin-top: 10px; 
+    border: 2px solid black;
+    background-color: rgb(241, 235, 236);
+}
+
+.shop .card-img-top2 {
+    height: 150px;
+    width: 180px;
+     margin-left: 40px; 
+     margin-top: 5px; 
+}
+
+.card-body .card-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.card-body .card-title2 {
+    text-align: center;
+    color: green
+}
+
+.shop .card-1 .card-body .btn {
+    display: inline-block;
+    margin-left: 30%;
+    border: 2px solid black;
+
+}
+
+.shop .card-1 .card-body .btn:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.gap {
+    height: 80px;
+    background-color: ed;
+}
+
+.packages {
+    height: auto;
+    background-color:reen ;
+}
+
+.packages-1 {
+    height: 100px;
+    background-color: ;
+}
+
+.packages-1 h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.packages .pac-1 {
+    height: 480px;
+    width: 425px;
+    margin:auto;
+    display: block;
+    border: 2px solid black;
+}
+
+.packages .pac-1 img {
+    height: 50%;
+    width: 85%;
+    margin-left: 23px;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+.packages .pac-1:hover {
+    background-color: rgb(27, 79, 27);
+    color: white;
+    transition: 0.5s;
+}
+
+.card-title3 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.rs {
+    text-align: center;
+    color: green;
+    font-size: large;
+}
+
+.pac-1 .b-2 {
+    display: inline-block;
+    margin-left: 35%;
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+}
+
+.pac-1 .card-body3 .b-2:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    transition: 1s;
+}
+
+
+
+
+/* What We Offer */
+
+
+
+.offer {
+    height: auto;
+    background-color: ;
+}
+
+.packages-1 {
+    height: 100px;
+    background-color: ;
+}
+
+.packages-1 h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.offer .pac-2 {
+    height: 300px;
+    margin:auto;
+    border: 2px solid black;
+    width: 425px;
+
+}
+
+.offer .pac-2 img {
+    height: 100px;
+    width: 100px;
+    margin-left: 150px;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+.offer .pac-2:hover {
+    background-color: rgb(27, 79, 27);
+    color: white;
+}
+
+.card-title4 {
+    color: green;
+    text-align: center;
+}
+
+.pac-2 .b-2 {
+    display: inline-block;
+    margin-left: 35%;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+}
+
+.pac-2 .card-body4 .b-2:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.last-div{
+    height:auto ;
+    background-color: ;
+}
+.last-div .last-left{
+    height: 400px;
+    
+}
+.last-left h3{
+    text-align: center;
+
+}
+
+.last-left ul li{
+    display: block;
+    margin-top: 25px;
+    margin-left: 90px;
+    
+}
+.last-left ul li a{
+    text-decoration: none;
+    color: black
+
+}
+.last-left ul li a:hover{
+    color: green;
+}
+
+
+.last-div .last-left2{
+    height: 400px;
+
+}
+.last-left2 h3{
+    text-align: center;
+
+}
+
+.last-left2 ul li{
+    display: block;
+    margin-top: 25px;
+    margin-left: 90px;
+    
+}
+.last-left2 ul li a{
+    text-decoration: none;
+    color: black
+
+}
+.last-left2 ul li a:hover{
+    color: green;
+}
+
+
+
+.last-div .last-mid{
+    height:auto ;
+    
+}
+.last-mid h3{
+    text-align: center;
+
+}
+
+.last-mid ul li{
+    display: block;
+    margin-top: 25px;
+    margin-left: 80px;
+    
+}
+.last-mid ul li a{
+    text-decoration: none;
+    color: black
+
+}
+.last-mid ul li a:hover{
+    color: green;
+}
+
+
+
+
+.last-div .last-right{
+    height:auto ;
+    
+}
+.last-right h3{
+    text-align: center;
+
+}
+
+.last-right ul li{
+    display: block;
+    margin-top: 25px;
+    margin-left: 90px;
+    
+}
+.last-right ul li a{
+    text-decoration: none;
+    color: black
+
+}
+.last-right ul li a:hover{
+    color: green;
+}
